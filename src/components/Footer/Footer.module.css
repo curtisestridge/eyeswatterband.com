@@ -1,0 +1,134 @@
+.footer {
+  background-color: #000;
+  padding: 6rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.socialNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.2s;
+}
+
+.socialNav.visible {
+  opacity: 1;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.socialNav.visible .socialLink {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.socialLink:hover {
+  color: #c9a227;
+  transform: translateY(-4px);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.linkName {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.copyright {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.8s ease 0.4s;
+}
+
+.copyright.visible {
+  opacity: 1;
+}
+
+.copyright p {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+.booking {
+  margin-top: 1rem !important;
+}
+
+.booking a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.booking a:hover {
+  color: #c9a227;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .socialNav {
+    gap: 1rem;
+  }
+
+  .socialLink {
+    padding: 0.75rem;
+  }
+
+  .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
