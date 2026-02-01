@@ -7,12 +7,6 @@ const shows = [
     venue: "Cosmo Joe's",
     date: 'Feb. 14',
   },
-  {
-    id: 2,
-    city: 'Nelsonville, OH',
-    venue: 'Nelsonville Music Festival',
-    date: 'Aug. 14',
-  },
 ];
 
 const Shows = () => {
