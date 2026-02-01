@@ -1,5 +1,6 @@
 import Hero from './components/Hero';
 import Shows from './components/Shows';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Hero />
         <Shows />
       </main>
+      <Footer />
     </div>
   );
 }
