@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import './assets/fonts/el-hidrant-regular.css';
 
 *,
 *::before,
@@ -9,12 +10,11 @@
 }
 
 :root {
-  --color-black: #000;
+  --color-orange: #D4714B;
   --color-white: #fff;
-  --color-accent: #c9a227;
-  --color-gray-dark: #0a0a0a;
-  --color-gray-mid: #1a1a1a;
+  --color-cream: #F5F0E8;
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'ElHidrant', cursive;
 }
 
 html {
@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: var(--font-family);
-  background-color: var(--color-black);
+  background-color: var(--color-orange);
   color: var(--color-white);
   line-height: 1.6;
   overflow-x: hidden;
@@ -40,25 +40,8 @@ main {
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-black);
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-black);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--color-white);
+  color: var(--color-orange);
 }
 
 img {
